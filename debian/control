@@ -5,7 +5,7 @@ Maintainer: RIA <info@ria.ee>
 Build-Depends:
  cdbs,
  cmake,
- libssl-dev,
+ libssl-dev|libssl1.0-dev,
  libxml2-dev
 Standards-Version: 3.9.8
 Homepage: https://github.com/open-eid/libdigidoc
@@ -60,7 +60,7 @@ Architecture: any
 Section: libdevel
 Depends:
  libdigidoc2 (= ${binary:Version}),
- libssl-dev,
+ libssl-dev|libssl1.0-dev,
  libxml2-dev,
  ${misc:Depends}
 Description: DigiDoc digital signature development files
